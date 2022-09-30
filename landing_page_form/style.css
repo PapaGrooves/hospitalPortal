@@ -1,27 +1,13 @@
 * {
-  padding: 0;
   margin: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: rgb(19, 89, 155);
-}
-body img {
-  width: 100%;
-}
-body a {
-  text-decoration: none;
-}
-body ul {
-  list-style: none;
+  padding: 0;
 }
 
 .container {
   width: 100%;
   height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url(../images/bg.jpg) center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+    url(images/bg.jpg) center no-repeat;
   background-size: cover;
 }
 
@@ -31,6 +17,7 @@ body ul {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 .banner-text h1 {
   color: #fff;
   font-family: "Montserrat", sans-serif;
@@ -39,6 +26,7 @@ body ul {
   letter-spacing: 2px;
   margin-bottom: 30px;
 }
+
 .banner-text p {
   color: #eee;
   font-family: "Josefin sans", sans-serif;
@@ -53,7 +41,8 @@ body ul {
   top: 50px;
   right: 60px;
 }
-.btns .btn {
+
+.btn {
   width: 170px;
   padding: 10px 15px;
   margin-right: 20px;
@@ -67,17 +56,21 @@ body ul {
   border: 2px solid tomato;
   transition: transform 0.3s;
 }
-.btns .btn:hover {
-  transform: translateY(-2px);
-}
-.btns .btn:active {
-  transform: translateY(0);
-}
-.btns .login-btn {
+
+.login-btn {
   background-color: tomato;
 }
-.btns .signup-btn {
+
+.signup-btn {
   background-color: transparent;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn:active {
+  transform: translateY(0);
 }
 
 .form-container {
@@ -99,7 +92,8 @@ body ul {
 
 .modal {
   width: 400px;
-  background: linear-gradient(rgba(148, 42, 42, 0.8), rgba(185, 129, 129, 0.6)), url(../images/bg.jpg) center no-repeat;
+  background: linear-gradient(rgba(148, 42, 42, 0.8), rgba(185, 129, 129, 0.6)),
+    url(images/bg.jpg) center no-repeat;
   background-size: cover;
   position: absolute;
   top: 50%;
@@ -129,12 +123,14 @@ body ul {
   margin: 80px 0 150px 0;
   color: #fff;
 }
+
 .form-header h1 {
   font-family: "Josefin Sans", sans-serif;
   font-size: 40px;
   font-weight: 300;
   margin-bottom: 30px;
 }
+
 .form-header h3 {
   font-family: "Montserrat", sans-serif;
   font-size: 25px;
@@ -147,11 +143,13 @@ body ul {
   flex-direction: column;
   align-items: center;
 }
-.form .input-group {
+
+.input-group {
   margin-bottom: 10px;
   position: relative;
 }
-.form .input-group input {
+
+.input-group input {
   width: 250px;
   padding: 15px 15px 15px 50px;
   border: none;
@@ -162,13 +160,15 @@ body ul {
   font-size: 16px;
   color: #ddd;
 }
-.form .input-group i {
+
+.input-group i {
   position: absolute;
   top: 13px;
   left: 17px;
   font-size: 18px;
   color: #aaa;
 }
+
 .form button {
   width: 310px;
   padding: 12px;
@@ -185,6 +185,7 @@ body ul {
   cursor: pointer;
   transition: all 0.3s;
 }
+
 .form button:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
@@ -192,5 +193,3 @@ body ul {
 .form button:active {
   transform: translateY(0);
 }
-
-/*# sourceMappingURL=app.css.map */
