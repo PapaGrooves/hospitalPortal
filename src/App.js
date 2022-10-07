@@ -1,30 +1,25 @@
-import './css/app.css';
-import Login from './components/Login';
-import Register from './components/Register';
+import "./css/app.css";
+// import Hello from "./components/Hello";
+// import Goodbye from "./components/Goodbye";
+// import Login from './components/Login';
+// import Register from './components/Register';
+// import Patient from "./components/Patient";
+// import Department from "./components/Department";
+// import Medication from "./components/Medication";
+import Counter from "./components/Counter";
 
 function App() {
+  // <div className="App"> </div>;
   return (
     <div className="App">
-     <div className="container">
-      <div className="banner-text">
-        <h1>WELCOME TO CLYDE CHILDRENS HOSPITAL</h1>
-        <p>LOGIN OR REGISTER TO ENTER THE HOSPITAL PORTAL</p>
-      </div>
-      <div className="btns">
-        <button className="btn login-btn">Login</button>
-        <button className="btn signup-btn">Register</button>
-      </div>
-      <div className="form-container">
-       {/* TODO login container */}
-        <Login />
-        {/* TODO signup container */}
-       <Register />
-      </div>
-    </div>
+    {/* <Patient name="Mephisto" age="267">
+      <Department dept="x-ray" doctor="Dr Strange" nurse="Florence"/>
+      <Medication medicine="xanax" dose="all of it"/>
+    </Patient> */}
+    <Counter />
     </div>
   );
 }
-
 
 export default App;
 
