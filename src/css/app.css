@@ -6,7 +6,9 @@
 
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: rgb(19, 89, 155);
+  background: rgb(31,54,78);
+  background: linear-gradient(0deg, rgba(31,54,78,1) 0%, rgba(62,109,156,1) 97%);
+  height: 100vh;
 }
 body img {
   width: 100%;
@@ -17,180 +19,72 @@ body a {
 body ul {
   list-style: none;
 }
+button {
+  border-style: none;
+  cursor: pointer;
+}
+input {
+  border-style: none;
+}
 
-.container {
+.login {
+  text-align: left;
+  width: 175px;
+  margin: auto;
+  padding-top: 50px;
+}
+.login > label {
+  color: white;
+}
+.login > input {
   width: 100%;
-  height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url(../images/bg.jpg) center no-repeat;
-  background-size: cover;
+  padding: 7.5px;
+  outline: 2px solid black;
+  margin: 7.5px auto;
+  border-radius: 0.5rem;
+}
+.login > button {
+  padding: 3px;
+  background-color: #FD841F;
+  outline: 2px solid black;
+  border-radius: 0.5rem;
+  width: 75px;
+  height: 35px;
+  margin: 15px 50px;
+}
+#togglePassword {
+  margin: auto;
+  margin-left: -30px; 
+cursor: pointer;
 }
 
-.banner-text {
+
+.strips {
+position: relative;
+height: 100px;
+width: 100vw;
+padding-top: 50px;
+
+transform: rotate(22.5deg);
+overflow: hidden;
+display: flex;
+flex-direction: column;
+
+
+align-items: center;
+}
+
+/* FIXME figure this out */
+/* .strips > div {
   position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.banner-text h1 {
-  color: #fff;
-  font-family: "Montserrat", sans-serif;
-  font-size: 80px;
-  font-weight: 300;
-  letter-spacing: 2px;
-  margin-bottom: 30px;
-}
-.banner-text p {
-  color: #eee;
-  font-family: "Josefin sans", sans-serif;
-  font-size: 40px;
-  font-weight: 300;
-  letter-spacing: 1px;
-  text-align: right;
+  height: 25px;
+  width: 150%;
+  padding:15px;
+  background-color: white;
+  display: block;
 }
 
-.btns {
-  position: absolute;
-  top: 50px;
-  right: 60px;
-}
-.btns .btn {
-  width: 170px;
-  padding: 10px 15px;
-  margin-right: 20px;
-  border-radius: 50px;
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 16px;
-  letter-spacing: 1px;
-  outline: none;
-  cursor: pointer;
-  color: #fff;
-  border: 2px solid tomato;
-  transition: transform 0.3s;
-}
-.btns .btn:hover {
-  transform: translateY(-2px);
-}
-.btns .btn:active {
-  transform: translateY(0);
-}
-.btns .login-btn {
-  background-color: tomato;
-}
-.btns .signup-btn {
-  background-color: transparent;
-}
-
-.form-container {
-  position: fixed;
-  background-color: rgba(0, 0, 0, 0.7);
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.5s;
-}
-
-.disable {
-  opacity: 1;
-  visibility: visible;
-}
-
-.modal {
-  width: 400px;
-  background: linear-gradient(rgba(148, 42, 42, 0.8), rgba(185, 129, 129, 0.6)), url(../images/bg.jpg) center no-repeat;
-  background-size: cover;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 20px;
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.5s;
-}
-
-.display {
-  opacity: 1;
-  visibility: visible;
-}
-
-.x-btn {
-  position: absolute;
-  right: 20px;
-  font-size: 50px;
-  color: #222;
-  cursor: pointer;
-}
-
-.form-header {
-  text-align: center;
-  margin: 80px 0 150px 0;
-  color: #fff;
-}
-.form-header h1 {
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 40px;
-  font-weight: 300;
-  margin-bottom: 30px;
-}
-.form-header h3 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 25px;
-  font-weight: 300;
-  text-transform: uppercase;
-}
-
-.form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.form .input-group {
-  margin-bottom: 10px;
-  position: relative;
-}
-.form .input-group input {
-  width: 250px;
-  padding: 15px 15px 15px 50px;
-  border: none;
-  outline: none;
-  border-radius: 30px;
-  background: rgba(0, 0, 0, 0.6);
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 16px;
-  color: #ddd;
-}
-.form .input-group i {
-  position: absolute;
-  top: 13px;
-  left: 17px;
-  font-size: 18px;
-  color: #aaa;
-}
-.form button {
-  width: 310px;
-  padding: 12px;
-  border: none;
-  outline: none;
-  border-radius: 30px;
-  background-color: #d867d8;
-  color: #fff;
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 16px;
-  text-transform: uppercase;
-  margin: 10px 0 50px 0;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
-  cursor: pointer;
-  transition: all 0.3s;
-}
-.form button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
-}
-.form button:active {
-  transform: translateY(0);
-}
-
-/*# sourceMappingURL=app.css.map */
+.strips > div:nth-of-type(2){
+margin-top: 40px;
+height: 25px;
+} */

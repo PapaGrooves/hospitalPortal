@@ -6,7 +6,9 @@
 
 body {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    background-color: rgb(55, 71, 85);
+    background: rgb(31,54,78);
+    background: linear-gradient(0deg, rgba(31,54,78,1) 0%, rgba(62,109,156,1) 97%);
+    height: 100vh;
     img {
         width: 100%;
     }
