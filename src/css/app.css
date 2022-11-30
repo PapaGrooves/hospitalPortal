@@ -9,6 +9,7 @@ body {
   background: rgb(31,54,78);
   background: linear-gradient(0deg, rgba(31,54,78,1) 0%, rgba(62,109,156,1) 97%);
   height: 100vh;
+  overflow: hidden;
 }
 body img {
   width: 100%;
@@ -58,7 +59,10 @@ input {
 cursor: pointer;
 }
 
-
+.dogtorWrap2 {
+  width: 300px;
+  margin: -60px auto;
+}
 .dogtorWrap {
 width: 350px;
 margin: 20px auto;
@@ -67,6 +71,8 @@ margin: 20px auto;
   width: 100%;
   height: 100%;
 }
+
+
 
 /* FIXME figure this out */
 
@@ -146,4 +152,28 @@ height: 25px;
 .is--back {
   position: relative;
   z-index: -1;
+}
+
+.buttons {
+  width: 328px;
+  height: 180px;
+
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  overflow: hidden;
+  margin: auto;
+  text-align: center;
+
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  gap: 15px;
+}
+.buttons > button {
+  background-color: #FD841F;
+  outline: 3px solid black;
+  border-radius: 0.5rem;
+  width: 150px;
+  height: 75px;
+  margin: auto;
 }

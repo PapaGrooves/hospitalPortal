@@ -1,5 +1,5 @@
 import "./css/app.css";
-import Login from "./pages/Login";
+// import Login from "./pages/Login";
 import Header from "./components/Header";
 import Circle from "./components/Circle";
 import Dogtor from "./images/dogtor.png";
@@ -12,7 +12,18 @@ function App() {
 <Header />
 <Circle />
 </div>
-<img src={Dogtor} alt="" />
+
+<div className="dogtorWrap2">
+<img src={Dogtor} alt="Cartoon dog doctor" className="dogtor" />
+</div>
+
+<div className="buttons">
+  <button>Profile</button>
+  <button>Departments</button>
+  <button>Play</button>
+  <button>Learn</button>
+</div>
+
     </div>
   );
 }
