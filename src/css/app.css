@@ -96,3 +96,54 @@ margin: 20px auto;
 margin-top: 40px;
 height: 25px;
 } */
+
+.headerWrap {
+  position: relative;
+}
+.title {
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  width: 100%;
+  height: 50px;
+  background-color: rgba(0,0,0,0.6);
+  text-align: center;
+}
+.title > h1 {
+  padding-top: 4px;
+}
+.ball {
+  width: 600px;
+  height: 450px;
+  position: absolute;
+
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+
+  background-color: orange;
+  border-bottom-left-radius: 70%;
+  border-bottom-right-radius: 70%;
+}
+
+.circle {
+  width: 200px;
+  height: 200px;
+
+  position: relative;
+  z-index: 4;
+  top: 115px;
+  margin: auto;
+
+  background-color: aqua;
+  border: 5px solid black;
+  border-radius: 50%;
+}
+
+.is--back {
+  position: relative;
+  z-index: -1;
+}

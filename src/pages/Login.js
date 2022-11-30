@@ -3,11 +3,12 @@ import React from "react";
 import Dogtor from "../images/dogtor.png";
 
 const Login = () => {
-  // password show/hide set up
-  const [passwordShown, setPasswordShown] = useState(false);
-  // icon color switch se up
-  const [isActive, setIsActive] = useState(false);
 
+    // icon color switch 
+    const [isActive, setIsActive] = useState(false);
+
+  // password show/hide
+  const [passwordShown, setPasswordShown] = useState(false);
   const togglePassword = () => {
     setPasswordShown(!passwordShown);
     setIsActive((current) => !current);
@@ -25,6 +26,8 @@ const Login = () => {
           name="password"
           id="password"
         />
+        {/* Eye icon, onclick will show/hide password
+            and change color.  */}
         <i
           class="far fa-eye"
           id="togglePassword"
